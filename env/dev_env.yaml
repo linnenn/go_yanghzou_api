@@ -1,0 +1,29 @@
+# 工作目录
+#项目基础配置
+#mysql数据库
+Database:
+  DbConnection: mysql
+  DbHost: 114.230.94.35
+  DbPort: 3306
+  DbDatabase: ring_video
+  DbUsername: root
+  DbPassword: gk1z9Ef@Y1
+  ConnTimeOut: 300
+  ReadTimeOut: 300
+  MaxConnection: 10
+  MaxIdle: 2
+#redis服务器
+Redis:
+  RedisHost: 114.230.94.35
+  RedisPassword: na@e5qerD1
+  RedisPort: 6379
+#  记录日志
+#  日志错误级别调整，默认：error
+# 使用 . 或绝对路径，请注意 `tmp_dir` 目录必须在 `root` 目录下
+Log:
+  Level: error    #错误级别，暂时不使用
+  Filename: ./zap.log,   #错误日志存储位置路径
+  MaxSize: 1,   #错误日志大小（单位：M）
+  MaxBackups: 5, #错误日志最多存在个数（单位：个）
+  MaxAge: 30, #错误日志最长存储时间（单位：天）
+  Compress: false, #是否压缩文件夹，压缩之后文件占用空间减少
